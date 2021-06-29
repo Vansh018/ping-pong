@@ -58,3 +58,9 @@ canvas{
     margin-top: 130px;
     box-shadow: 5px 5px 5px white;
 }
+
+#game_console{
+    width:600px;
+    height:700px;
+    background: green;
+}
