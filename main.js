@@ -23,11 +23,11 @@ var ball = {
 
 function setup(){
   canvas =  createCanvas(700,600);
-  
-    canvas.center();
     canvas.parent('canvas');
+
     video = createCapture(VIDEO);
-    video.hide();
+	video.size(700,600);
+	video.parent('game_console');
     
     poseNet = ml5.poseNet(video, modelLoaded);
 	poseNet.on('pose', gotPoses);
